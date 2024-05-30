@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+    <test verbose="2" preserve-order="true" name="C:/Users/hp/IdeaProjects/AutomationFramework/src/test/java">
+        <parameter name="browsertype" value="chrome"></parameter>
+        <parameter name="url" value="https://www.poundland.co.uk/"></parameter>
+        <classes>
+            <class name="WebTests.WishlistTests">
+                <methods>
+                    <include name="signIn"/>
+                    <include name="selectProduct"/>
+                    <include name="Favourite"/>
+                    <include name="logOff"/>
+                </methods>
+            </class>
+            <class name="WebTests.ReadExcelData">
+                <methods>
+                    <include name="readData"/>
+                </methods>
+            </class>
+            <class name="WebTests.AddCartTests">
+                <methods>
+                    <include name="signIn"/>
+                    <include name="addProducts"/>
+                    <include name="cart"/>
+                    <include name="logOff"/>
+                </methods>
+            </class>
+            
+        </classes>
+    </test>
+</suite>

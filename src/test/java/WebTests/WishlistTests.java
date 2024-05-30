@@ -49,4 +49,5 @@ public class WishlistTests extends PoundLand {
     public void logOff(){
         myAccountPopUps.goToLogOff();
     }
+
 }
